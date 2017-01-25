@@ -30,8 +30,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\AckWatch();
         $endpoint->setId($id)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -48,8 +47,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\ActivateWatch();
         $endpoint->setId($id)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -66,8 +64,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\DeactivateWatch();
         $endpoint->setId($id)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -85,8 +82,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\DeleteWatch();
         $endpoint->setId($id)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -105,8 +101,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\ExecuteWatch();
         $endpoint->setId($id)->setbody($body)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -123,8 +118,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\GetWatch();
         $endpoint->setId($id)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -143,8 +137,7 @@ class WatcherNamespace extends AbstractNamespace
 
         $endpoint = new Endpoints\PutWatch();
         $endpoint->setId($id)->setbody($body)->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -158,8 +151,7 @@ class WatcherNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Restart();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -173,8 +165,7 @@ class WatcherNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Start();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -188,8 +179,7 @@ class WatcherNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Stats();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
@@ -203,7 +193,6 @@ class WatcherNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Stop();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 }

@@ -44,8 +44,7 @@ class MonitoringNamespace extends AbstractNamespace
         $endpoint->setType($type)
             ->setBody($body)
             ->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 

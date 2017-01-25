@@ -25,8 +25,7 @@ class LicenseNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Delete();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -40,8 +39,7 @@ class LicenseNamespace extends AbstractNamespace
     {
         $endpoint = new Endpoints\Get();
         $endpoint->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
     /**
@@ -58,8 +56,7 @@ class LicenseNamespace extends AbstractNamespace
         $endpoint = new Endpoints\Post();
         $endpoint->setBody($body)
             ->setParams($params);
-        $response = $this->performRequest($endpoint);
-        return $endpoint->resultOrFuture($response);
+        return $this->performRequest($endpoint);
     }
 
 
