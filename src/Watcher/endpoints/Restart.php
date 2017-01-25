@@ -40,6 +40,6 @@ class Restart extends AbstractEndpoint
      */
     public function getMethod()
     {
-        return "PUT";
+        return "POST";
     }
 }

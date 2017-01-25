@@ -48,6 +48,6 @@ class DeactivateWatch extends AbstractEndpoint
      */
     public function getMethod()
     {
-        return "POST";
+        return "PUT";
     }
 }

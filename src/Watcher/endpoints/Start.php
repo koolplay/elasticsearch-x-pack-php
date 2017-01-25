@@ -40,6 +40,6 @@ class Start extends AbstractEndpoint
      */
     public function getMethod()
     {
-        return "PUT";
+        return "POST";
     }
 }

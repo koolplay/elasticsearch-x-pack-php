@@ -48,6 +48,6 @@ class ActivateWatch extends AbstractEndpoint
      */
     public function getMethod()
     {
-        return "POST";
+        return "PUT";
     }
 }
